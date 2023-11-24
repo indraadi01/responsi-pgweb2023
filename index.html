@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SISULI</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/tab-browser.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .header-inner-pages {
+      height: 120px;
+    }
+
+    .header-inner-pages .container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .card {
+      width: 48%;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    body {
+      background-color: #000000;
+      color: white;
+    }
+
+    .container {
+      padding: 50px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    h3 {
+      color: #FFD700;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .img-fluid {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .img-fluid:hover {
+      transform: scale(1.1);
+    }
+
+    .btn-back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .btn-back-to-top:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+    function showNotification() {
+      alert("Untuk akses peta silahkan pakai tombol 'Go to Map'!");
+    }
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">SISULI</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="geoserver.html">Go to Map</a></li>
+          <li class="dropdown"><a href="#"><span>Statistik</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sapi1922.html">Populasi Sapi Perah Tahun 2019 - 2022</a></li>
+              <li><a href="kambing1922.html">Populasi Kambing Tahun 2019 - 2022</a></li>
+              <li><a href="sapikecamatan.html">Populasi Sapi Perah Tahun Menurut Kecamatan</a></li>
+              <li><a href="kambingkecamatan.html">Populasi KambingTahun Menurut Kecamatan</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="my_porto/index.html">About Me</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/cow1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animated fadeInDown">Selamat Datang<span></span></h2>
+              <h2 class="animated fadeInDown">Sistem Informasi Susu Kabupaten Boyolali<span></span></h2>
+              <p class="animated fadeInUp text-center">Kota Boyolali yang berada di Provinsi Jawa Tengah dikenal
+                memiliki julukan
+                sebagai Kota Susu.
+                Ternyata julukan Kota Susu disematkan kepada Kabupaten Boyolali karena wilayah ini merupakan daerah
+                penghasil susu segar terbesar di Jawa Tengah.</p>
+              <a href="#sisuli" class="btn-get-started animated fadeInUp scrollto">Baca Selengkapnya!</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/goat1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animated fadeInDown">Peternakan Kambing di Boyolali</h2>
+              <p class="animated fadeInUp text-center">Populasi jumlah ternak kambing berada di Kabupaten Boyolali
+                berdasarkan data
+                dari Badan Pusat Statistik Kabupaten Boyolali pada tahun 2022 sebanyak 1.280 ekor.
+                Banyaknya populasi ternak kambing di Boyolali mengalami pertumbuhan setiap tahunnya sehingga Kota
+                Boyolali dijuluki sebagai Kota Susu karena hasil peternakan dari kambing salah satunya adalah susu.
+              </p>
+              <a href="#kambing" class="btn-get-started animated fadeInUp scrollto">Baca Selengkapnya!</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/cow2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animated fadeInDown">Peternakan Sapi di Boyolali</h2>
+              <p class="animated fadeInUp text-center">Populasi jumlah ternak sapi perah berada di Kabupaten Boyolali
+                berdasarkan
+                data dari Badan Pusat Statistik Kabupaten Boyolali pada tahun 2022 sebanyak 60.704 ekor.
+                Banyaknya populasi ternak sapi perah di Boyolali mengalami pertumbuhan setiap tahunnya sehingga Kota
+                Boyolali dijuluki sebagai Kota Susu karena hasil peternakan dari sapi salah satunya adalah susu.</p>
+              <a href="#sapi" class="btn-get-started animated fadeInUp scrollto">Baca Selengkapnya!</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <hr id="main">
+  <!--Start Sisuli Section-->
+  <section>
+    <div class="container">
+      <!-- Baris Pertama -->
+      <div id="sisuli" class="row">
+        <div class="col-md-6 mb-4">
+          <h3><b>SISULI (Sistem Informasi Susu Kabupaten Boyolali)</b></h3>
+          <p class="text-justify">Selamat Datang pada website GIS dengan judul SISULI. Nama dari website ini merupakan
+            singkatan dari Sistem Informasi Susu Kabupaten Boyolali. Website ini memuat informasi tematik seputar
+            peternakan kambing dan peternakan sapi di Kabupaten Boyolali.
+            Nama dari website memiliki latar belakang karena susu merupakan salah satu dari produk peternakan susu dan
+            kambing sehingga kami mengangkat diksi tersebut supaya menjadi <i>public interest</i> ketika terlintas
+            terdengar akan menarik perhatian.
+            Website ini memuat informasi mengenai sebagian titik persebaran lokasi peternakan kambing dan peternakan
+            sapi di Kabupaten Boyolali, kemudian menampilkan data statistik populasi ternak kambing dan ternak sapi
+            yang dapat menjadi informasi bermanfaat untuk pembaca.
+            Selain itu, website ini memuat beberapa foto <i>iconic</i> berada di Kabupaten Boyolali yang menjadi
+            lokasi kajian website.
+          </p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="assets/img/sisuli.png" alt="Foto 1" class="img-fluid mx-auto d-block" onclick="showNotification()">
+        </div>
+      </div>
+
+      <!-- Baris Kedua -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <p class="text-justify">Mengangkat tema peternakan di Kabupaten Boyolali karena Kabupaten Boyolali terkenal
+            sebagai sentra penghasil hasil peternakan yakni susu terbesardi Jawa Tengah.
+            Selain karena kondisi geografis Kabupaten Boyolali yang cocok untuk kegiatan pengembangan peternakan,
+            lahan yang tersedia di Kabupaten Boyolali untuk kegiatan peternakan sangat memadahi.
+            Dukungan pemerintah juga hadir dengan membangun infrastruktur dan membantu masyarakat dalam memanfaatkan
+            potensi daerah.
+          </p>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <img src="assets/img/news.png" alt="Foto 1" class="img-fluid mx-auto d-block" onclick="showNotification()">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Sisuli Section-->
+  <hr>
+  <div class="row text-center mt-5">
+    <div class="col">
+      <h3><u>Spot Lokasi <i>Iconic</i> di Kabupaten Boyolali</u></h3>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <!-- Baris Pertama -->
+        <div class="col-lg-6 d-flex justify-content-center align-items-stretch position-relative">
+          <!-- Card 1 -->
+          <div class="card mb-4">
+            <img src="assets/img/byl4.jpg" alt="Image description" class="card-img-top"
+              style="width: 350px; height: 250px;">
+            <div class="card-body">
+              <h5 class="card-title"><b>Patung Sapi 'Ndekem' atau 'Lembu Sora'</b></h5>
+              <p class="card-text">Alun-Alun Kidul merupakan ikon wisata dari Kabupaten Boyolali. Alun-alun Kidul
+                Boyolali memiliki keunikan tersendiri sebab terdapat patung Sapi yang besar.
+                Patung sapi raksasa atau biasa disebut dengan Lembu Sora atau Sapi Ndekem. Patung Sapi tersebut
+                biasanya digunakan untuk berfoto bagi para pengunjung.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card mb-4">
+            <img src="assets/img/byl1.jpg" alt="Image description" class="card-img-top"
+              style="width: 350px; height: 250px;">
+            <div class="card-body">
+              <h5 class="card-title"><b>Gapura Boyolali Tersenyum</b></h5>
+              <p class="card-text text-justify">Kabupaten Boyolali atau dikenal dengan Boyolali Tersenyum menyebutkan
+                asal mula nama Boyolali berdasarkan serat Babad Penggung Serat Mataram.
+                Tersenyum memiliki kepanjangan dari tertib, elok, rapi, sehat, dan nyaman untuk masyarakat.
+                Selain tersenyum Boyolali juga dikenal karena sebagai daerah penghasil daging dan susu sapi. Tidak
+                heran jika di penjuru kota sampai ke pelosok desa banyak sekali patung sapi.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Baris Kedua -->
+        <div class="col-lg-6 d-flex justify-content-center align-items-stretch position-relative">
+          <!-- Card 3 -->
+          <div class="card mb-4">
+            <img src="assets/img/byl2.jpg" alt="Image description" class="card-img-top"
+              style="width: 350px; height: 250px;">
+            <div class="card-body">
+              <h5 class="card-title"><b>Patung Arjuna Wijaya</b></h5>
+              <p class="card-text text-justify">Kabupaten Boyolali memiliki salah satu ikon dengan nama Patung Arjuna
+                Wijaya. Patung kuda berjajar tersebut terletak di pusat kota Simpang Lima Boyolali.
+                Sejarah didirikannya patung ini berkaitan dengan kisah Perang Baratayuda. Pada kisah Perang Baratayuda
+                ini, Arjuna melawan Adipati Karna yang merupakan saudara kandungnya dan pada akhirnya dimenangkan oleh
+                Arjuna.
+                Sejarah 13 ekor kuda yang menarik kereta perang menyimbolkan filsafat dari kepemimpinan dari alam
+                semesta. Simbol kepemimpinan alam semesta ada delapan, disebut Asta Brata.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card mb-4">
+            <img src="assets/img/byl3.jpg" alt="Image description" class="card-img-top"
+              style="width: 350px; height: 250px;">
+            <div class="card-body">
+              <h5 class="card-title"><b>Monumen Susu Tumpah</b></h5>
+              <p class="card-text text-justify">Monumen Susu Tumpah tepatnya berada di Jalan Raya Boyolali - Solo KM
+                2,5 terbuat dari baja yang menggambarkan susu sapi dalam botol yang tertuang ke gelas yang ada di
+                bawahnya.
+                Kemudian di sekelilingnya dipagari dengan hiasan gentong susu. Monumen ikonik tersebut berketinggian
+                7,5 meter dan jika malam hari berhiaskan cahaya lampu.
+                Usut punya usut, ternyata masyarakat lebih suka menyebut Monumen Susu Tumpah berawal dari proses
+                pembangunannya kala itu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--End About Section-->
+  <hr>
+  <!--Start Kambing Section-->
+  <section>
+    <section>
+      <div class="container">
+        <!-- Baris Pertama -->
+        <div id="kambing" class="row">
+          <div class="col-md-6 mb-4">
+            <img src="assets/img/sanen.jpg" alt="Foto 1" class="img-fluid mx-auto d-block">
+          </div>
+          <div class="col-md-6 align-self-center">
+            <h3><b><u>Kambing Saanen</u></b></h3>
+            <p text-justify>Kambing Saanen adalah kambing yang berasal dari lembah Saanen, Swiss bagian barat.
+              Merupakan salah satu jenis kambing terbesar di Swiss dan penghasil susu kambing yang terkenal. Kambing
+              ini sulit berkembang di wilayah tropis karena kepekaannya terhadap matahari. Oleh karena itu di
+              Indonesia jenis kambing ini disilangkan lagi dengan jenis kambing lain yang lebih resisten terhadap
+              cuaca tropis dan tetap diberi nama Kambing Saanen, antara lain dengan kambing peranakan etawa. Salah
+              satunya keunggulan khusus Kambing Saanen berada pada produksi susunya yang berkualitas tinggi.
+              Dalam setahun, Saanen sanggup hasilkan jumlah susu yang krusial, bahkan juga capai beberapa ribu liter.
+              Susu Saanen mempunyai kandungan protein serta lemak yang semakin lebih tinggi dibanding susu sapi,
+              hingga baik sekali untuk dibuat jadi produk buatan susu seperti yogurt dan keju.</p>
+          </div>
+        </div>
+
+        <!-- Baris Kedua -->
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <img src="assets/img/sanen2.png" alt="Foto 2" class="img-fluid mx-auto d-block">
+          </div>
+          <div class="col-md-6">
+            <p text-justify>Kambing Saanen betina dapat memproduksi susu sampai 3,8 liter per hari, dengan kandungan
+              lemak susu mencapai 2,5% hingga 3%. Kambing Saanen ini dipelihara sebagai kambing perah yang semakin
+              popular di Indonesia.
+              Per tahun nya kambing Saanen betina dapat menghasilkan anak 1 hingga 2 ekor. Susu kambing memiliki nilai
+              ekonomis yang lebih tinggi dibandingkan dengan susu sapi. Susu kambingnya dapat dijual dengan harga Rp
+              15 ribu hingga Rp 25 ribu per liter.
+              Susu kambing sangat bermanfaat untuk menjaga kesehatan tulang, mengobati diabetes, mengobati gangguan
+              pernapasan, mengobati peradangan kulit menahun (psoriasis), mencegah penyakit syaraf, meningkatkan
+              system kekebalan tubuh, meningkatkan produksi ASI, membantu meningkatkan kecerdasan, dan lebih mudah
+              dicerna dalam tubuh.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Kambing Section-->
+    <hr>
+    <!--Start Sapi Section-->
+    <section>
+      <div class="container">
+        <!-- Baris Pertama -->
+        <div id="sapi" class="row">
+          <div class="col-md-6 mb-4">
+            <h3><b><u>Sapi Friesian Holstein</u></b></h3>
+            <p class="text-justify">Sapi Friesian Holstein di Boyolali diakui sebagai pemeran utama dalam industri
+              susu di daerah tersebut. Jenis sapi ini memiliki ciri khas warna hitam putih yang mencolok dan memiliki
+              kemampuan produksi susu yang luar biasa. Faktor produksi susu yang tinggi menjadi daya tarik utama,
+              dengan rata-rata produksi susu per hari yang mencapai jumlah yang mengesankan. Kualitas susu yang
+              dihasilkan oleh sapi Friesian Holstein di Boyolali dikenal karena tingkat kemurnian dan nutrisinya yang
+              baik.
+              Para peternak di Boyolali secara aktif mengelola dan meningkatkan kualitas sapi Friesian Holstein
+              mereka. Mereka memastikan bahwa sapi-sapi ini mendapatkan pakan yang seimbang dan kondisi kesehatan yang
+              optimal. Praktik pemeliharaan yang baik dan perhatian terhadap kebersihan dan keamanan lingkungan
+              pemeliharaan menjadi kunci keberhasilan dalam memproduksi susu yang berkualitas tinggi.</p>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img src="assets/img/sapi1.jpeg" alt="Foto 1" class="img-fluid mx-auto d-block">
+          </div>
+        </div>
+
+        <!-- Baris Kedua -->
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <p class="text-justify">Selain itu, Boyolali telah mengembangkan infrastruktur dan program pendukung untuk
+              mendukung pertumbuhan industri susu. Fasilitas modern seperti peternakan dengan teknologi tinggi dan
+              pusat pemrosesan susu modern telah diperkenalkan untuk meningkatkan efisiensi dan kualitas produksi.
+              Keberhasilan Boyolali sebagai "Kota Susu" juga tercermin dalam program pendidikan dan pelatihan bagi
+              para peternak lokal, untuk memastikan bahwa mereka menerapkan praktik terbaik dalam pemeliharaan sapi
+              Friesian Holstein.
+              Sapi Friesian Holstein yang berkualitas baik di Boyolali telah menjadi sumber kebanggaan bagi peternak
+              dan masyarakat setempat. Mereka tidak hanya memberikan manfaat ekonomi melalui produksi susu yang
+              tinggi, tetapi juga menjadi simbol kemajuan dalam pengembangan sektor pertanian di daerah tersebut.
+              Dengan upaya berkelanjutan dalam pemeliharaan dan peningkatan kualitas, sapi Friesian Holstein di
+              Boyolali terus memberikan kontribusi positif terhadap pertumbuhan industri susu di Indonesia.</p>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <img src="assets/img/sapi2.jpg" alt="Foto 2" class="img-fluid mx-auto d-block">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Sapi Section-->
+    </main>
+    <!-- End #main -->
+    <hr>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>2023</span></strong>|| mindraadikusuma
+        </div>
+        <div class="credits">
+          <a href="https://bootstrapmade.com/"></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
