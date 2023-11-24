@@ -43,8 +43,10 @@ ___
 ># Sumber data
 
 1. Data Spasial (InaGeoportal)
-2. Data Statistik (BPS Kabupaten Boyolali)
-3. Foto pendukung (Internet)
+2. Data Titik Lokasi (Google My Maps)
+3. Data Statistik (BPS Kabupaten Boyolali)
+4. Foto pendukung (Internet)
+
 
 ___
 
