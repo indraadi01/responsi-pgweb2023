@@ -97,31 +97,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <header id="header" class="header-inner-pages">
-        <div class="container d-flex align-items-center justify-content-between">
-
-            <h1 class="logo"><a href="index.html">SISULI</a></h1>
-            <!-- .navbar -->
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-                    <li><a class="nav-link scrollto active" href="geoserver.html">Go to Map</a></li>
-                    <li class="dropdown"><a href="#"><span>Statistik</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="sapi1922.html">Populasi Sapi Perah Tahun 2019 - 2022</a></li>
-                            <li><a href="#">Populasi Kambing Tahun 2019 - 2022</a></li>
-                            <li><a href="sapikecamatan.html">Populasi Sapi Perah Tahun Menurut Kecamatan</a></li>
-                            <li><a href="kambingkecamatan.html">Populasi KambingTahun Menurut Kecamatan</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
-        </div>
-    </header>
-    <div id="map"></div>
-
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -150,6 +125,31 @@
 
     <!-- Routing -->
     <script src="assets/plugins/leaflet-routing/leaflet-routing-machine.js"></script>
+
+    <header id="header" class="header-inner-pages">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html">SISULI</a></h1>
+            <!-- .navbar -->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto active" href="geoserver.html">Go to Map</a></li>
+                    <li class="dropdown"><a href="#"><span>Statistik</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="sapi1922.html">Populasi Sapi Perah Tahun 2019 - 2022</a></li>
+                            <li><a href="#">Populasi Kambing Tahun 2019 - 2022</a></li>
+                            <li><a href="sapikecamatan.html">Populasi Sapi Perah Tahun Menurut Kecamatan</a></li>
+                            <li><a href="kambingkecamatan.html">Populasi KambingTahun Menurut Kecamatan</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <div id="map"></div>
     <script>
         /* Deklarasi Map */
         var map = L.map('map').setView([-7.431775955313597, 110.68835424188985], 11);
